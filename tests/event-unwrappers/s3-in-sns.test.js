@@ -22,8 +22,8 @@ SAMPLE_EVENT = {
             Signature: 'Bt/ABCDEFGH==',
             SigningCertUrl: 'https://sns.us-east-1.amazonaws.com/SimpleNotificationService-874eba81258f454ba8bf74bf476a6f4f.pem',
             UnsubscribeUrl: 'https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:1234567890:some-topic-name:08d701fa-2d0d-432e-9a21-ea3986e31223',
-            MessageAttributes: {}
-         }
+            MessageAttributes: {},
+         },
       },
       {
          EventSource: 'aws:sns',
@@ -41,8 +41,8 @@ SAMPLE_EVENT = {
             Signature: 'Bt/ABCDEFGH==',
             SigningCertUrl: 'https://sns.us-east-1.amazonaws.com/SimpleNotificationService-874eba81258f454ba8bf74bf476a6f4f.pem',
             UnsubscribeUrl: 'https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:1234567890:some-topic-name:08d701fa-2d0d-432e-9a21-ea3986e31223',
-            MessageAttributes: {}
-         }
+            MessageAttributes: {},
+         },
       },
    ],
 };
