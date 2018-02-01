@@ -1,5 +1,7 @@
 'use strict';
 
+var Q = require('q');
+
 /**
  * Properly converts a function that returns a promise into a handler for a
  * Lambda function. Ignores any response / value that the promise is resolved
@@ -30,7 +32,7 @@
  * @param function cb the cb passed into the Lambda
  */
 module.exports = function(promiseReturningHandlerFn, context, cb) {
-   promiseReturningHandlerFn()
+   Q.promised(promiseReturningHandlerFn)()
       .then(function() {
          // eslint-disable-next-line no-console
          console.log('completed with %s millis left', context.getRemainingTimeInMillis());
