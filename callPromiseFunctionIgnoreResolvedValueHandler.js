@@ -2,6 +2,8 @@
 
 var Q = require('q');
 
+Q.longStackSupport = true;
+
 /**
  * Properly converts a function that returns a promise into a handler for a
  * Lambda function. Ignores any response / value that the promise is resolved
