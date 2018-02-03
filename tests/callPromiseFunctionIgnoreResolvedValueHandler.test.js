@@ -60,4 +60,21 @@ describe('callPromiseFunctionIgnoreResolvedValueHandler', function() {
       handler(fn, context, cb);
    });
 
+   it('handles an error, even when the error is thrown without a promise being returned', function(done) {
+      var expectedErr = new Error('ExpectedThisError'),
+          fn, cb;
+
+      fn = function() {
+         throw expectedErr;
+      };
+
+      cb = function(err, resp) {
+         expect(expectedErr).to.be(err);
+         expect(resp).to.be(undefined);
+         done();
+      };
+
+      handler(fn, context, cb);
+   });
+
 });
