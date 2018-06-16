@@ -21,13 +21,9 @@
   },
   "homepage": "https://github.com/silvermine/lambda-utils#readme",
   "peerDependencies": {
-    "class.extend": ">=0.9.2 <1.0.0",
-    "underscore": ">=1.8.3 <2.0.0",
     "q": ">=1.4.1 <2.0.0"
   },
   "devDependencies": {
-    "aws-sdk": "2.20.0",
-    "class.extend": "0.9.2",
     "coveralls": "2.11.16",
     "eslint": "3.16.1",
     "eslint-config-silvermine": "1.4.0",
