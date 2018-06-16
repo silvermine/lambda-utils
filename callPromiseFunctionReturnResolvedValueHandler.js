@@ -4,13 +4,14 @@ var makeHandler = require('./_makeLambdaHandler');
 
 /**
  * Properly converts a function that returns a promise into a handler for a Lambda
- * function. Ignores any response / value that the promise is resolved with.
+ * function. Any response / value that the promise is resolved with is what's passed to
+ * the Lambda callback.
  *
  * Example:
  *
  * ```js
  *    // in your Lambda handler file (the one AWS Lambda invokes):
- *    var handler = require('silvermine-lambda-utils/callPromiseFunctionIgnoreResolvedValueHandler'),
+ *    var handler = require('silvermine-lambda-utils/callPromiseFunctionReturnResolvedValueHandler'),
  *        MyService = require('./MyService.js');
  *
  *    module.exports = {
@@ -19,8 +20,9 @@ var makeHandler = require('./_makeLambdaHandler');
  *              fn = svc.bind(svc, evt.otherParameter, evt.somethingElse);
  *
  *          // Handler will call your service function, and call the callback
- *          // with either nothing (upon success) or the thrown error (on failure)
- *          // Also does minimal logging on completion or error.
+ *          // with the whatever value your promise is resolved with (upon success) or the
+ *          // thrown error (on failure). Also does minimal logging on completion or
+ *          // error.
  *          handler(fn, context, cb);
  *       },
  *    };
@@ -31,4 +33,4 @@ var makeHandler = require('./_makeLambdaHandler');
  * @param object context the context passed into the Lambda
  * @param function cb the cb passed into the Lambda
  */
-module.exports = makeHandler(false);
+module.exports = makeHandler(true);
