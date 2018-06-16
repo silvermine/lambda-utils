@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Utilities functions for working with AWS Lambda",
   "scripts": {
-    "test": "grunt standards && ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec 'tests/**/*.test.js'"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -R spec 'tests/**/*.test.js'"
   },
   "author": "Jeremy Thomerson",
   "license": "MIT",
