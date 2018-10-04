@@ -1,9 +1,9 @@
 # Silvermine Lambda Utilities
 
-[![Build Status](https://travis-ci.org/silvermine/lambda-utils.png?branch=master)](https://travis-ci.org/silvermine/lambda-utils)
+[![Build Status](https://travis-ci.org/silvermine/lambda-utils.svg?branch=master)](https://travis-ci.org/silvermine/lambda-utils)
 [![Coverage Status](https://coveralls.io/repos/github/silvermine/lambda-utils/badge.svg?branch=master)](https://coveralls.io/github/silvermine/lambda-utils?branch=master)
-[![Dependency Status](https://david-dm.org/silvermine/lambda-utils.png)](https://david-dm.org/silvermine/lambda-utils)
-[![Dev Dependency Status](https://david-dm.org/silvermine/lambda-utils/dev-status.png)](https://david-dm.org/silvermine/lambda-utils#info=devDependencies&view=table)
+[![Dependency Status](https://david-dm.org/silvermine/lambda-utils.svg)](https://david-dm.org/silvermine/lambda-utils)
+[![Dev Dependency Status](https://david-dm.org/silvermine/lambda-utils/dev-status.svg)](https://david-dm.org/silvermine/lambda-utils#info=devDependencies&view=table)
 
 
 ## What is it?
