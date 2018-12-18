@@ -12,17 +12,7 @@ _.each([ true, false ], function(returns) {
    var name = 'callPromiseFunction' + (returns ? 'Return' : 'Ignore') + 'ResolvedValueHandler',
        verb = (returns ? 'returns' : 'ignores'),
        context = { getRemainingTimeInMillis: _.noop },
-       handler, revert;
-
-   beforeEach(function() {
-      revert = makeHandler.__set__({
-         console: { log: _.noop },
-      });
-   });
-
-   afterEach(function() {
-      revert();
-   });
+       handler;
 
    function runTest(done) {
       var fn = sinon.stub(),
