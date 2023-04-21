@@ -1,16 +1,15 @@
 # Silvermine Lambda Utilities
 
-[![Build Status](https://travis-ci.org/silvermine/lambda-utils.svg?branch=master)](https://travis-ci.org/silvermine/lambda-utils)
-[![Coverage Status](https://coveralls.io/repos/github/silvermine/lambda-utils/badge.svg?branch=master)](https://coveralls.io/github/silvermine/lambda-utils?branch=master)
-[![Dependency Status](https://david-dm.org/silvermine/lambda-utils.svg)](https://david-dm.org/silvermine/lambda-utils)
-[![Dev Dependency Status](https://david-dm.org/silvermine/lambda-utils/dev-status.svg)](https://david-dm.org/silvermine/lambda-utils#info=devDependencies&view=table)
-
+[![NPM Version][npm-version]][npm-version-url]
+[![License][license-badge]](./LICENSE)
+[![Build Status][build-status]][build-status-url]
+[![Coverage Status][coverage-status]][coverage-status-url]
+![Conventional Commits][conventional-commits-url]
 
 ## What is it?
 
 This is a collection of utility functions that may be useful if you are working
 with AWS Lambda, and especially if you prefer promises over callbacks.
-
 
 ## How do I use it?
 
@@ -33,15 +32,22 @@ module.exports = {
 };
 ```
 
-
 ## How do I contribute?
 
 We genuinely appreciate external contributions. See [our extensive
 documentation](https://github.com/silvermine/silvermine-info#contributing) on
 how to contribute.
 
-
 ## License
 
 This software is released under the MIT license. See [the license
 file](LICENSE) for more details.
+
+[npm-version]: https://img.shields.io/npm/v/@silvermine/lambda-utils.svg
+[npm-version-url]: https://www.npmjs.com/package/@silvermine/lambda-utils
+[license-badge]: https://img.shields.io/github/license/silvermine/lambda-utils.svg
+[build-status]: https://github.com/silvermine/lambda-utils/actions/workflows/ci.yml/badge.svg
+[build-status-url]: https://travis-ci.org/silvermine/lambda-utils.svg?branch=master
+[coverage-status]: https://coveralls.io/repos/github/silvermine/lambda-utils/badge.svg?branch=master
+[coverage-status-url]: https://coveralls.io/github/silvermine/lambda-utils?branch=master
+[conventional-commits-url]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg

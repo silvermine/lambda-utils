@@ -11,6 +11,11 @@
             "ignoreUrls": true
          }
       ]
-   }
+   },
+
+  "ignorePatterns": [
+    "coverage/**/*",
+    "node_modules/**/*"
+  ]
 
 }
